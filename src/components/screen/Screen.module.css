@@ -1,0 +1,51 @@
+.screen {
+  background-color: var(--bg-screen);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88px;
+  margin: 32px 0 24px 0;
+  overflow: auto;
+  padding: 8px 24px;
+  text-align: right;
+  width: 100%;
+}
+
+.divideByZero {
+  color: var(--key-bg-2);
+  font-size: 14px;
+  user-select: none;
+}
+
+.inputValue {
+  color: var(--text-1);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.previouslyValue {
+  color: var(--key-shadow-3);
+  line-height: 10px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 576px) {
+  .screen {
+    height: 128px;
+    padding: 12px 30px;
+  }
+
+  .divideByZero {
+    font-size: 18px;
+  }
+
+  .inputValue {
+    font-size: 56px;
+  }
+
+  .previouslyValue {
+    font-size: 24px;
+  }
+}

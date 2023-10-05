@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  align-items: center;
+  background-color: var(--bg-main);
+  display: flex;
+  font-family: "League Spartan", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 280px;
+  padding: 30px 25px;
+  position: relative;
+}
+
+.Theme1 {
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-keypad: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  --key-bg-1: hsl(225, 21%, 49%);
+  --key-bg-1-hover: #a2b3e1;
+  --key-shadow-1: hsl(224, 28%, 35%);
+  --key-bg-2: hsl(6, 63%, 50%);
+  --key-bg-2-hover: #f96c5b;
+  --key-shadow-2: hsl(6, 70%, 34%);
+  --key-bg-3: hsl(30, 25%, 89%);
+  --key-bg-3-hover: #ffffff;
+  --key-shadow-3: hsl(28, 16%, 65%);
+
+  --text-1: hsl(0, 0%, 100%);
+  --text-2: hsl(221, 14%, 31%);
+  --text-3: hsl(0, 0%, 100%);
+  --text-4: hsl(0, 0%, 100%);
+}
+
+.Theme2 {
+  --bg-main: hsl(0, 0%, 90%);
+  --bg-keypad: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+
+  --key-bg-1: hsl(185, 42%, 37%);
+  --key-bg-1-hover: #62b5bd;
+  --key-shadow-1: hsl(185, 58%, 25%);
+  --key-bg-2: hsl(25, 98%, 40%);
+  --key-bg-2-hover: #ff8b38;
+  --key-shadow-2: hsl(25, 99%, 27%);
+  --key-bg-3: hsl(45, 7%, 89%);
+  --key-bg-3-hover: #ffffff;
+  --key-shadow-3: hsl(35, 11%, 61%);
+
+  --text-1: hsl(60, 10%, 19%);
+  --text-2: hsl(60, 10%, 19%);
+  --text-3: hsl(0, 0%, 100%);
+  --text-4: hsl(0, 0%, 100%);
+}
+
+.Theme3 {
+  --bg-main: hsl(268, 75%, 9%);
+  --bg-keypad: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
+
+  --key-bg-1: hsl(281, 89%, 26%);
+  --key-bg-1-hover: #8631b0;
+  --key-shadow-1: hsl(285, 91%, 52%);
+  --key-bg-2: hsl(176, 100%, 44%);
+  --key-bg-2-hover: #92fff9;
+  --key-shadow-2: hsl(177, 92%, 70%);
+  --key-bg-3: hsl(268, 47%, 21%);
+  --key-bg-3-hover: #6b34ac;
+  --key-shadow-3: hsl(290, 70%, 36%);
+
+  --text-1: hsl(52, 100%, 62%);
+  --text-2: hsl(52, 100%, 62%);
+  --text-3: hsl(0, 0%, 100%);
+  --text-4: #000;
+}
+
+.Calculator {
+  margin: auto;
+  max-width: 540px;
+  min-width: 280px;
+  width: 100%;
+  z-index: 5;
+}
+
+.Attribution {
+  align-items: flex-end;
+  color: var(--text-1);
+  display: flex;
+  font-size: 12px;
+  font-weight: 300;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 8px;
+  position: absolute;
+  text-align: center;
+}
+
+.Attribution a {
+  color: var(--key-bg-2);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+  .Attribution {
+    font-size: 14px;
+  }
+}

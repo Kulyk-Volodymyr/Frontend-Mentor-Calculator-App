@@ -1,0 +1,100 @@
+.navbar {
+  align-items: center;
+  color: var(--text-1);
+  display: flex;
+  height: 44px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0 auto 7px;
+  user-select: none;
+}
+
+.theme {
+  align-items: center;
+  display: flex;
+}
+
+.theme label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: auto 27px 6px 0;
+  user-select: none;
+}
+
+.themeValues {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 44px;
+  width: 70px;
+}
+
+.datalist {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  user-select: none;
+}
+
+.datalist option {
+  transform: translateY(2px);
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--bg-keypad);
+  border-radius: 13px;
+  cursor: pointer;
+  height: 26px;
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--key-bg-2);
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background: var(--key-bg-2-hover);
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: var(--key-bg-2);
+  border: none;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+  background: var(--key-bg-2-hover);
+}
+
+@media screen and (min-width: 576px) {
+  .title {
+    margin: 14px 0 auto 8px;
+  }
+
+  .datalist {
+    font-size: 14px;
+  }
+
+  .datalist option {
+    transform: translateY(0px);
+  }
+}
