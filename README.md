@@ -5,6 +5,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 All requirements for this challenge can be found here: [src/design](./src/design).
 
 - Live Site URL: [GitHub Pages](https://kulyk-volodymyr.github.io/Frontend-Mentor-Calculator-App/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/calculator-with-keyboard-input-iin-837Z1H)
 
 ### Screenshot
 
